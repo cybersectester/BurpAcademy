@@ -11,3 +11,7 @@ Change the host header to get the logs of password reset link to the attacker co
 
 Token log to the attacker controlled server
 use the token to change the password 
+
+## Lab: Host header authentication bypass
+<img width="886" height="664" alt="image" src="https://github.com/user-attachments/assets/6074f3ed-038d-4835-81b8-17150bec0e22" />
+Use the host header injection burp extension to guess the host header as localhost to access the admin page. 
