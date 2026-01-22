@@ -12,8 +12,19 @@ Change the host header to get the logs of password reset link to the attacker co
 Token log to the attacker controlled server
 use the token to change the password 
 
+<br>
+<br>
+
 ## Lab: Host header authentication bypass
 
 <img width="886" height="664" alt="image" src="https://github.com/user-attachments/assets/6074f3ed-038d-4835-81b8-17150bec0e22" />
 
 Use the host header injection burp extension to guess the host header as localhost to access the admin page. 
+
+<br>
+<br>
+
+## Web cache poisoning via ambiguous requests (double host heaeder injection) 
+
+<img width="1271" height="632" alt="image" src="https://github.com/user-attachments/assets/d6a1b86e-3873-4ffe-9071-7826c0328815" />
+This app has cache web cache identified in burp scan and leveraged the poisioning with the host header attack to inject the external js code 
