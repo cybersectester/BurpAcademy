@@ -33,4 +33,25 @@ HTML to get the post logs to the exploit servers
 
 got the user agent from the victim
 
+## Lab: Web cache poisoning via an unkeyed query string
+<img width="2124" height="1125" alt="image" src="https://github.com/user-attachments/assets/ed3fe301-ba7e-4581-b1d7-58dad3f1d030" />
+
+scanner identified the issue 
+
+<img width="2194" height="914" alt="image" src="https://github.com/user-attachments/assets/f0a49117-d170-4fd5-938f-81108f9f7a6b" />
+
+cached the XSS payload but we need to wait untill the cache expire to reflect the XSS bcz we don't know the cache buster 
+
+<img width="2034" height="909" alt="image" src="https://github.com/user-attachments/assets/303ec595-6ea4-44d8-b4ef-1a1a08c95faa" />
+
+if try with the different headers it came to know origin header is cache buster
+
+<img width="1790" height="822" alt="image" src="https://github.com/user-attachments/assets/deab5a9b-9b67-407c-8496-f380e32ed69e" />
+
+to get the info about the cache key in the response 
+
+<img width="2148" height="807" alt="image" src="https://github.com/user-attachments/assets/c4ddb609-3527-4adf-bb32-8dfdf3ad69b2" />
+
+but the burp scanner identified different cache key with the param miner
+
 
