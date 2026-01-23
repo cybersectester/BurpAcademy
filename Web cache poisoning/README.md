@@ -57,7 +57,7 @@ but the burp scanner identified different cache key with the param miner
 <br>
 <br>
 
-## Lab: Lab: Web cache poisoning via an unkeyed query parameter
+## Lab: Web cache poisoning via an unkeyed query parameter
 <img width="1255" height="1107" alt="image" src="https://github.com/user-attachments/assets/92028838-78ed-4465-ab21-831dd64a03e2" />
 
 scanner identify the utm_content is the cache keyed parameter 
@@ -69,7 +69,7 @@ inject the payload into the url as cache buster to inject the payload.
 <br>
 <br>
 
-## Lab: Lab: Parameter cloaking
+## Lab: Parameter cloaking
 
 <img width="1885" height="777" alt="image" src="https://github.com/user-attachments/assets/a879fb93-099e-4873-a971-07c20644f8fb" />
 
@@ -79,3 +79,14 @@ we need to find the unkeyed input parameter which cab be achieved by parameter p
 
 once cloacking worked out we can see that the cache poisoning attack 
 
+## Lab: Web cache poisoning via a fat GET request
+
+<img width="1134" height="415" alt="image" src="https://github.com/user-attachments/assets/d081bba1-d8b1-418f-aebf-88328e7b5f0f" />
+
+parameter pollution with the payload and origin header is used as cache buster or keyed input 
+
+## Lab: URL normalization
+
+<img width="1797" height="873" alt="image" src="https://github.com/user-attachments/assets/3fa00af8-bb8d-4259-8077-27a021c892f5" />
+
+application encoding the xss payload if browse directly but if we cache the xss payload it will not encode bczz its getting the cache from the server
