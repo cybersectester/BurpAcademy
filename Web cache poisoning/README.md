@@ -54,4 +54,28 @@ to get the info about the cache key in the response
 
 but the burp scanner identified different cache key with the param miner
 
+<br>
+<br>
+
+## Lab: Lab: Web cache poisoning via an unkeyed query parameter
+<img width="1255" height="1107" alt="image" src="https://github.com/user-attachments/assets/92028838-78ed-4465-ab21-831dd64a03e2" />
+
+scanner identify the utm_content is the cache keyed parameter 
+
+<img width="1902" height="922" alt="image" src="https://github.com/user-attachments/assets/0e3f1c52-f2cf-4e8e-aee6-f4b600eaf322" />
+
+inject the payload into the url as cache buster to inject the payload.
+
+<br>
+<br>
+
+## Lab: Lab: Parameter cloaking
+
+<img width="1885" height="777" alt="image" src="https://github.com/user-attachments/assets/a879fb93-099e-4873-a971-07c20644f8fb" />
+
+we need to find the unkeyed input parameter which cab be achieved by parameter pollution combined with the cloacking ; parameters
+
+<img width="1896" height="777" alt="image" src="https://github.com/user-attachments/assets/b6a4684a-a36c-4ca4-8d91-73ca171899a9" />
+
+once cloacking worked out we can see that the cache poisoning attack 
 
