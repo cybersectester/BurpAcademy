@@ -23,5 +23,10 @@ identify which columns has the string data in it, both columns has string data
 
 identify the version of the oracle from the portswigger cheat sheet payloads
 
+<br>
 
+## Lab: SQL injection attack, querying the database type and version on MySQL and Microsoft
 
+<img width="1040" height="463" alt="image" src="https://github.com/user-attachments/assets/181722f1-c9c8-4dc9-aefc-e7ed83283721" />
+
+non oracle db version 
