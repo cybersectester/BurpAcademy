@@ -1,5 +1,9 @@
-# LAB1
-# LAB1
+# CL.TE
+
+
+# TE.CL
+
+
 # LAB1
 # LAB1
 # LAB1
