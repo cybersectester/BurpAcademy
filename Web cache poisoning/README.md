@@ -73,6 +73,9 @@ inject the payload into the url as cache buster to inject the payload.
 
 ## Lab: Parameter cloaking
 
+callback=setCountryCookie is keyed input and we need to find way to make it unkeyed input to inject our payload. utm_content parameter we can use to make it unkeyed input by
+appending the callback parameter to the utm_content 
+
 <img width="1885" height="777" alt="image" src="https://github.com/user-attachments/assets/a879fb93-099e-4873-a971-07c20644f8fb" />
 
 we need to find the unkeyed input parameter which cab be achieved by parameter pollution combined with the cloacking ; parameters
